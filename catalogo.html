@@ -4,6 +4,42 @@
   <meta charset="UTF-8">
   <title>Catálogo - AutoVentas</title>
   <link rel="stylesheet" href="estilos.css">
+  <style>
+    .vehiculo {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .vehiculo img {
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .vehiculo-info {
+      flex-grow: 1;
+    }
+
+    .vehiculo-info a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #1e2a38;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .vehiculo-info a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
 
@@ -21,12 +57,43 @@
 
 <div class="container">
   <h2>Modelos disponibles</h2>
-  <ul>
-    <li>Ford Mustang 2023 - $35,000</li>
-    <li>Toyota Corolla 2022 - $22,000</li>
-    <li>Chevrolet Camaro 2021 - $30,000</li>
-    <li>Kia Rio 2023 - $18,500</li>
-  </ul>
+
+  <div class="vehiculo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyTmQvKLfcVu7CyJbTZlb-VROr9h07_QQTmr64yhsJcN_zvAiTgnPVK__C&s=10" alt="Ford Mustang 2023">
+    <div class="vehiculo-info">
+      <h3>Ford Mustang 2023</h3>
+      <p>Precio: $35,000</p>
+      <a href="mustang.html">Ver más</a>
+    </div>
+  </div>
+
+  <div class="vehiculo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC08vOIKXeHnBFuV_ciiqtljtDsY615bPRzA&s" alt="Toyota Corolla 2022">
+    <div class="vehiculo-info">
+      <h3>Toyota Corolla 2022</h3>
+      <p>Precio: $22,000</p>
+      <a href="corolla.html">Ver más</a>
+    </div>
+  </div>
+
+  <div class="vehiculo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKO_Me-4_MrFEDimMbQkUJ_WFLnrw80cWREg&s" alt="Chevrolet Camaro 2021">
+    <div class="vehiculo-info">
+      <h3>Chevrolet Camaro 2021</h3>
+      <p>Precio: $30,000</p>
+      <a href="camaro.html">Ver más</a>
+    </div>
+  </div>
+
+  <div class="vehiculo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AO1wCQrmmOroeM41fQjqfFZX10teoIeTOQ&s" alt="Kia Rio 2023">
+    <div class="vehiculo-info">
+      <h3>Kia Rio 2023</h3>
+      <p>Precio: $18,500</p>
+      <a href="kia-rio.html">Ver más</a>
+    </div>
+  </div>
+
 </div>
 
 <footer>
