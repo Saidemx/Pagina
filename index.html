@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoVentas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e2a38;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .car {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .car img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .car h3 {
+      margin-top: 10px;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: #1e2a38;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3e5064;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AutoVentas</h1>
+  <p>Encuentra tu próximo vehículo con nosotros</p>
+</header>
+
+<div class="container">
+
+  <div class="car">
+    <img src="https://via.placeholder.com/800x400?text=Auto+1" alt="Auto 1">
+    <h3>Ford Mustang 2023</h3>
+    <p>Potencia, estilo y tecnología. ¡Siente la velocidad!</p>
+    <strong>Precio: $35,000 USD</strong>
+  </div>
+
+  <div class="car">
+    <img src="https://via.placeholder.com/800x400?text=Auto+2" alt="Auto 2">
+    <h3>Toyota Corolla 2022</h3>
+    <p>Eficiencia y confiabilidad para el día a día.</p>
+    <strong>Precio: $22,000 USD</strong>
+  </div>
+
+  <form>
+    <h2>Solicita información</h2>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="modelo">Modelo de interés:</label>
+    <select id="modelo" name="modelo">
+      <option>Ford Mustang 2023</option>
+      <option>Toyota Corolla 2022</option>
+    </select>
+
+    <label for="mensaje">Comentarios o preguntas:</label>
+    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+
+</div>
+
+</body>
+</html>
