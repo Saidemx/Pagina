@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - AutoVentas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>Contáctanos</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="catalogo.html">Catálogo</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<div class="container">
+  <h2>Cuéntanos qué estás buscando</h2>
+  <p>Rellena este breve cuestionario y te ayudaremos a encontrar el auto ideal.</p>
+
+  <form>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="preferencia">¿Qué tipo de vehículo prefieres?</label>
+    <select id="preferencia" name="preferencia" required>
+      <option value="">-- Selecciona --</option>
+      <option value="sedan">Sedán</option>
+      <option value="suv">SUV</option>
+      <option value="pickup">Pick-up</option>
+      <option value="deportivo">Deportivo</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <label>¿Qué rango de precios manejas?</label>
+    <input type="radio" name="precio" value="menor20" required> Menos de $20,000<br>
+    <input type="radio" name="precio" value="20a35"> $20,000 - $35,000<br>
+    <input type="radio" name="precio" value="35a50"> $35,000 - $50,000<br>
+    <input type="radio" name="precio" value="mayor50"> Más de $50,000<br>
+
+    <label for="financiamiento">¿Necesitas financiamiento?</label>
+    <select id="financiamiento" name="financiamiento" required>
+      <option value="">-- Selecciona --</option>
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="comentarios">Comentarios adicionales:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ej: marcas favoritas, condiciones especiales, etc."></textarea>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2025 AutoVentas. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
